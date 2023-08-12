@@ -8,7 +8,7 @@ Category.init(
   {
     // define columns
     category_name: {
-      type: Datatypes.STRING,
+      type: DataTypes.STRING,
       allowNull: false,
     },
   },
@@ -20,5 +20,4 @@ Category.init(
     modelName: 'category',
   }
 );
-
 module.exports = Category;
