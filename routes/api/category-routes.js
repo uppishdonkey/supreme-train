@@ -6,6 +6,13 @@ const { Category, Product } = require('../../models');
 router.get('/', (req, res) => {
   // find all categories
   // be sure to include its associated Products
+  try {
+    const ecommerce_db = await Product.findByPk(req.params.id);
+    if (!ecommerce_db) {
+      res.status(404).json('No product with this id!');
+      return;
+    }
+  }
 });
 
 router.get('/:id', (req, res) => {
