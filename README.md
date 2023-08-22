@@ -1,1 +1,4 @@
 # Module 13 Challenge
+
+## Description 
+On startup, the user is given a functional Express.js API. When a user adds their database name, MySQL username, and MySQL password to an environment variable file, then they are able to connect to a database using Sequelize. When I enter schema and seed commands, then a development database is created and is seeded with test data. When a user enters the command to invoke the application, then my server is started and the Sequelize models are synced to the MySQL database. When a user opens API GET routes in Insomnia Core for categories, products, or tags, then the data for each of these routes is displayed in a formatted JSON. When a user tests API POST, PUT, and DELETE routes in Insomnia Core, then the user is able to successfully create, update, and delete data in my database 
